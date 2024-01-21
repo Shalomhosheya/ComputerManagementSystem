@@ -1,0 +1,31 @@
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #0f6789, #286155);
+    -fx-border-width: .5px;
+    -fx-cursor: hand;
+}
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom right, transparent, #95a5a6);
+
+}
+.transparent{
+    -fx-background-color: transparent;
+}
+.btn{
+    -fx-background-color: linear-gradient(to bottom right, #2d3436, #246861);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+}
+.btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #d63031, #2d3436);
+}
+.logout{
+    -fx-background-color: #bdc3c7;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+}
+.logout:hover{
+    -fx-background-color: #a71931;
+}

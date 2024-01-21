@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <AnchorPane prefHeight="573.0" prefWidth="1120.0" BorderPane.alignment="CENTER" />
-   </top>
-</BorderPane>
+<AnchorPane fx:id="rootnode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.DashBoardController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../Assets/peakpx.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="720.0" prefWidth="215.0" styleClass="nav-form" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css">
+         <children>
+            <Button layoutX="27.0" layoutY="267.0" mnemonicParsing="false" onAction="#DirectVGA" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="VGA" />
+            <Button layoutX="27.0" layoutY="220.0" mnemonicParsing="false" onAction="#DirectRAM" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="RAM" />
+            <Button layoutX="27.0" layoutY="175.0" mnemonicParsing="false" onAction="#DirectStorage" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="STORAGES" />
+            <Button layoutX="27.0" layoutY="319.0" mnemonicParsing="false" onAction="#DirectProcessor" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="PROCESSORS" />
+            <Button layoutX="27.0" layoutY="370.0" mnemonicParsing="false" onAction="#DirectRGB" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="RGB" />
+            <Button layoutX="27.0" layoutY="422.0" mnemonicParsing="false" onAction="#DirectPowersupply" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="POWERSUPPLY" />
+            <Button layoutX="27.0" layoutY="470.0" mnemonicParsing="false" onAction="#DirectCoolingTools" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="COOLING TOOLS" />
+            <Button layoutX="27.0" layoutY="523.0" mnemonicParsing="false" onAction="#DirectWishlist" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="WISHLIST" />
+            <Button layoutX="14.0" layoutY="681.0" mnemonicParsing="false" styleClass="logout" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="Log out" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

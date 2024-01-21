@@ -26,14 +26,15 @@ public class LoginFormController {
 
     public Button LgCreateBtn;
     public Button LgLoginBtn;
-    public BorderPane rootNode;
+    @FXML
+    private BorderPane rootbode;
     public TextField txtUserNAme;
 
     Usermodel usermodel = new Usermodel();
 
     public void CreateAxxount(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/view/CreateAccount.fxml"));
-        Stage stage = (Stage) rootNode.getScene().getWindow();
+        Stage stage = (Stage) rootbode.getScene().getWindow();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
         stage.centerOnScreen();
@@ -46,8 +47,6 @@ public class LoginFormController {
             new Alert(Alert.AlertType.ERROR, "Error in Entered Data").show();
         } else {
             try {
-
-
                 CusDto cusDto = usermodel.CheckData(txtUserNAme.getText());
 
                 boolean checkData = false;
@@ -56,8 +55,9 @@ public class LoginFormController {
                 }
                 if (checkData) {
                     Parent root = FXMLLoader.load(getClass().getResource("/View/Dashboard.fxml"));
-                    Stage stage = (Stage) rootNode.getScene().getWindow();
+                    Stage stage = (Stage) rootbode.getScene().getWindow();
                     Scene scene = new Scene(root);
+                    stage.setTitle(".......DASHBOARD.......");
                     stage.setScene(scene);
                     stage.centerOnScreen();
                     stage.show();
