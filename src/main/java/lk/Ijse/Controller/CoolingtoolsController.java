@@ -1,2 +1,4 @@
-package lk.Ijse.Controller;public class CoolingtoolsController {
+package lk.Ijse.Controller;
+
+public class CoolingtoolsController {
 }

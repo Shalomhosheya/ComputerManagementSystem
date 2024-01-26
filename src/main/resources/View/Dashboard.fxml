@@ -22,7 +22,7 @@
             <Button layoutX="27.0" layoutY="422.0" mnemonicParsing="false" onAction="#DirectPowersupply" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="POWERSUPPLY" />
             <Button layoutX="27.0" layoutY="470.0" mnemonicParsing="false" onAction="#DirectCoolingTools" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="COOLING TOOLS" />
             <Button layoutX="27.0" layoutY="523.0" mnemonicParsing="false" onAction="#DirectWishlist" prefHeight="25.0" prefWidth="161.0" styleClass="btn" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="WISHLIST" />
-            <Button layoutX="14.0" layoutY="681.0" mnemonicParsing="false" styleClass="logout" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="Log out" />
+            <Button layoutX="14.0" layoutY="681.0" mnemonicParsing="false" onAction="#logout" styleClass="logout" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="Log out" />
          </children>
       </AnchorPane>
    </children>

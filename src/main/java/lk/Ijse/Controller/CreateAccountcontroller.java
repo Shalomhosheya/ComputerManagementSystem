@@ -50,10 +50,6 @@ public class  CreateAccountcontroller {
     public void Build(ActionEvent event) throws IOException {
         boolean Isvalid = Validation();
         if (Isvalid) {
-            if (Rg_Id.getText().isEmpty() || Rg_telephonenum.getText().isEmpty()) {
-                new Alert(Alert.AlertType.ERROR, "empty").show();
-                return;
-            }
             int id = Integer.parseInt(Rg_Id.getText());
             String username = RgtextfieldUsername.getText();
             String email = Rg_emailfield.getText();
@@ -61,7 +57,7 @@ public class  CreateAccountcontroller {
             int number = Integer.parseInt(Rg_telephonenum.getText());
 
 
-            if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            if (username.isEmpty() || email.isEmpty() || password.isEmpty()||Rg_telephonenum.getText().isEmpty()||Rg_telephonenum.getText().isEmpty()) {
                 new Alert(Alert.AlertType.ERROR, "empty").show();
                 return;
             }

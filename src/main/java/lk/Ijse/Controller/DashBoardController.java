@@ -97,6 +97,17 @@ public class DashBoardController  {
     }
 
     @FXML
+    void logout(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/view/LoginForm.fxml"));
+        Stage stage = (Stage) rootnode.getScene().getWindow();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("VGA Form");
+        stage.centerOnScreen();
+        stage.show();
+    }
+
+    @FXML
     void DirectWishlist(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/view/WishlistForm.fxml"));
         Stage stage = (Stage) rootnode.getScene().getWindow();

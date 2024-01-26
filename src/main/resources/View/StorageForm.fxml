@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="rootNode" prefHeight="574.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.StorageformController">
+<AnchorPane fx:id="rootNode" prefHeight="548.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.StorageformController">
    <children>
-      <AnchorPane layoutY="301.0" prefHeight="276.0" prefWidth="936.0" />
-      <TableView layoutY="14.0" prefHeight="299.0" prefWidth="499.0">
+      <AnchorPane layoutY="301.0" prefHeight="255.0" prefWidth="936.0">
+         <children>
+            <Button fx:id="Storage_importBtn" layoutX="734.0" layoutY="26.0" mnemonicParsing="false" onAction="#ImageViewACT" prefHeight="25.0" prefWidth="73.0" text="Import" />
+            <Button fx:id="Storage_ADDBtn" layoutX="537.0" layoutY="194.0" mnemonicParsing="false" onAction="#AddtoDatabase" prefHeight="25.0" prefWidth="115.0" text="ADD" />
+            <TextField fx:id="Storage_IDTxt" layoutX="121.0" layoutY="38.0" />
+            <TextField fx:id="Storage_Quantitytxt" layoutX="121.0" layoutY="90.0" />
+            <TextField fx:id="Storage_Pricetxt" layoutX="121.0" layoutY="138.0" prefHeight="27.0" prefWidth="149.0" />
+            <Text layoutX="90.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="30.13671875" />
+            <Text layoutX="64.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="51.13671875" />
+            <Text layoutX="75.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="30.13671875" />
+            <Text layoutX="416.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" wrappingWidth="51.13671875" />
+            <Text layoutX="409.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="51.13671875" />
+            <ComboBox fx:id="Storage_BrandCombo" layoutX="477.0" layoutY="37.0" prefWidth="150.0" />
+            <Text layoutX="415.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="38.13671875" />
+            <Text layoutX="416.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="51.13671875" />
+            <ComboBox fx:id="Storage_StatusCombo" layoutX="477.0" layoutY="138.0" prefWidth="150.0" />
+            <ComboBox fx:id="Storage_TypeCombo" layoutX="477.0" layoutY="90.0" prefWidth="150.0" />
+         </children></AnchorPane>
+      <TableView fx:id="Storage_Table" prefHeight="313.0" prefWidth="642.0">
         <columns>
-          <TableColumn prefWidth="127.0" text="BrandName" />
-          <TableColumn prefWidth="117.0" text="Quantity" />
-            <TableColumn prefWidth="130.0" text="Price" />
-            <TableColumn prefWidth="124.0" text="Status" />
+          <TableColumn fx:id="Storage_Table_BName" prefWidth="127.0" text="BrandName" />
+          <TableColumn fx:id="Storage_Table_Quantity" prefWidth="117.0" text="Quantity" />
+            <TableColumn fx:id="Storage_Table_Price" prefWidth="130.0" text="Price" />
+            <TableColumn fx:id="Storage_Table_Status" prefWidth="143.0" text="Status" />
+            <TableColumn fx:id="Storage_Table_Type" prefWidth="124.0" text="Type" />
         </columns>
       </TableView>
       <Button layoutX="839.0" layoutY="28.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="25.0" prefWidth="73.0" styleClass="logout" stylesheets="@../Assets/CSS/DESIGNSFORDASHBOARD.css" text="Back" />
+      <ImageView fx:id="Storage_imageViewer" fitHeight="204.0" fitWidth="200.0" layoutX="676.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

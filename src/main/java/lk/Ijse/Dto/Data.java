@@ -1,2 +1,5 @@
-package lk.Ijse.Dto;public class Data {
+package lk.Ijse.Dto;
+
+public class Data {
+    public static String path;
 }
